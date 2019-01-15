@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #box {
+            height: 500px;
+            width: 400px;
+            border: 1px  solid  darkred;
+            display: flex;
+           flex-direction: column;
+        }
+        #top  ul{
+            display: flex;
+        }
+        #top{
+            height: 30px;
+            border: 1px  solid  rebeccapurple;
+            width: 400px;
+            flex-direction: row;
+        }
+        #top li:nth-child(1){
+            height: 30px;
+            background: orangered;
+            width: 50px;
+        }
+        #top li:nth-child(2){
+            height: 30px;
+            background: #85c9fa;
+             flex: 1;
+        }
+        #top li:nth-child(3){
+            height: 30px;
+            background: #00cb00;
+            width: 50px;
+        }
+        #center{
+            flex: 1;
+            background: indianred;
+        }
+        #det{
+            height: 30px;
+            border: 1px  solid #07ffdf;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="top">
+        <ul>
+            <li>logo</li>
+            <li>名字</li>
+            <li>菜单</li>
+        </ul>
+    </div>
+    <div id="center">
+        <ul>
+            <li>中间</li>
+            <li>中间</li>
+            <li>中间</li>
+        </ul>
+    </div>
+    <div id="det">
+        <ul>
+            <li>底部</li>
+            <li>底部</li>
+            <li>底部</li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>

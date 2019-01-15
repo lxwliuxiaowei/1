@@ -1,0 +1,93 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10 px;
+}
+#box1 {
+  width: 32rem;
+  height: 171.3rem;
+  background: #f0f0f0;
+}
+#box1 #box2 img {
+  width: 32rem;
+  height: 16.8rem;
+}
+#box1 #box3 {
+  text-align: center;
+  margin-top: 1rem;
+}
+#box1 #box3 img {
+  width: 30.4rem;
+  height: 3.1rem;
+}
+#box1 #box4 input {
+  width: 23.7rem;
+  height: 3.9rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #fe9600;
+}
+#box1 #box4 div {
+  width: 6.1rem;
+  height: 4rem;
+  background: #fe9600;
+  position: absolute;
+  float: left;
+  margin-left: 248px;
+  margin-top: -40px;
+}
+#box1 #box4 {
+  position: relative;
+}
+#box1 .box5 {
+  width: 32rem;
+  height: 20.75rem;
+}
+#box1 .box6 {
+  margin-top: 2rem;
+}
+#box1 .box6 p {
+  float: left;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+  color: #848484;
+}
+#box1 .box6 p:nth-child(1) {
+  float: left;
+  margin-left: 4.8rem;
+}
+#box1 .box7 {
+  margin-top: 2.25rem;
+}
+#box1 .box7 p {
+  float: left;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+  color: #848484;
+}
+#box1 .box7 p:nth-child(1) {
+  float: left;
+  margin-left: 4.8rem;
+}
+#box1 .box8 {
+  position: fixed;
+}
+#box1 .box8 img {
+  width: 6.3rem;
+  height: 5.85rem;
+  margin-top: 3.15rem;
+  margin-left: 1.3rem;
+  fixed: 1;
+}
+#box1 .box8 img:nth-child(1) {
+  margin-left: 1.1rem;
+}
+#box1 .box9 ul {
+  position: fixed;
+}
+#box1 .box9 ul li {
+  fixed: 1;
+}

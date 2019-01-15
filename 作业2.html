@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1，shrink-to-fit=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box1">
+    <div id="box2">
+    <img  src="2/1.png">
+    </div>
+    <div  id="box3"><img  src="2/2.png"></div>
+    <div  id="box4"><input  type="text" placeholder="尾品会"><div></div></div>
+    <div class="box5">
+        <div class="box6">
+            <p>图书</p><p>母婴</p><p>图书</p><p>母婴</p><p>母婴</p>
+        </div><br>
+        <div class="box7">
+            <p>图书</p><p>母婴</p><p>图书</p><p>母婴</p><p>母婴</p>
+        </div><br>
+        <div  class="box8">
+            <img  src="2/3.png">
+            <img  src="2/4.png">
+            <img  src="2/3.png">
+            <img  src="2/4.png">
+        </div>
+        <div   class="box9">
+         <ul>
+             <li>我的订单</li>
+             <li>我的优惠</li>
+             <li>口袋客服</li>
+             <li>浏览历史</li>
+         </ul>
+        </div>
+
+    </div>
+
+</div>
+</body>
+<link rel="stylesheet"  href="2.css">
+<script>
+    (function (win,doc) {
+        function change(){
+            doc.documentElement.style.fontSize=10*doc.documentElement.clientWidth/320+'px';
+        }
+        change();
+        win.addEventListener('resize',change,false)
+    })(window,document);
+</script>
+</html>
