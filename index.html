@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1，shrink-to-fit=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<link rel="stylesheet"  href="1.css">
+<body>
+<div></div>
+<div></div>
+</body>
+<script>
+    (function (win,doc) {
+        function change(){
+            doc.documentElement.style.fontSize=10*doc.documentElement.clientWidth/375+'px';
+        }
+        change();
+        win.addEventListener('resize',change,false)
+    })(window,document);
+    document.addEventListener('DOMContentLoaded',function () {
+       var  oDiv=document.querySelectorAll('div')
+       for(var  i=0;i<oDiv.length;i++){
+           drag(oDiv[i])
+       }
+    },false)
+    function drag(obj) {
+        var  x1=0;
+        var  y2=0
+        obj.addEventListener('touchstart',function (ev) {
+            console.log(ev)
+            var  id=ev.targetTouches[0].identifier
+            var  disX=ev.targetTouches[0].pageX-x1;
+            var  disY=ev.targetTouches[0].pageY-y2;
+            function move(ev) {
+               if(ev.targetTouches[0].identifier==id){
+                   var  x=ev.targetTouches[0].pageX-disX;
+                   var  y=ev.targetTouches[0].pageY-disY;
+                   obj.style.transform='translate('+x+'px,'+y+'px)';
+               }
+            }
+            function end() {
+              if(ev.changedTouches[0].identifier==id){
+                  obj.removeEventListener('touchmove',move,false)
+                  obj.removeEventListener('touchend',end,false)
+              }
+            }
+            obj.addEventListener('touchmove',move,false)
+            obj.addEventListener('touchend',end,false)
+        },false)
+
+
+    }
+</script>
+</html>
